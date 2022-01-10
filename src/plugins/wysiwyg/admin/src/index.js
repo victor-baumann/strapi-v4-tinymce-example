@@ -4,6 +4,8 @@ import pluginId from './pluginId';
 import Initializer from './components/Initializer';
 import PluginIcon from './components/PluginIcon';
 
+import Wysiwyg from './components/Wysiwyg';
+
 const name = pluginPkg.strapi.name;
 
 export default {
@@ -28,6 +30,9 @@ export default {
         // },
       ],
     });
+
+    app.addFields({ type: "wysiwyg", Component: Wysiwyg });
+
     app.registerPlugin({
       id: pluginId,
       initializer: Initializer,
