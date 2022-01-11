@@ -8,6 +8,9 @@ yarn
 yarn develop --watch-admin
 ```
 
+Check this diff for the required changes once you have generated a plugin with `npm run generate`
+https://github.com/victor-baumann/strapi-v4-tinymce-example/compare/6b1675ef5184b8acb6a81a73699b0ddab4e2279a...main
+
 Current status:
 - [x] Editor saves and loads text
 - [x] Use Strapi media dialog to upload and insert images 
